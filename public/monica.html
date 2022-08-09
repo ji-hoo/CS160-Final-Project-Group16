@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/vendors/bootstrap/css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="/css/main.css" />
+
+	<script src="/vendors/jquery/jquery-3.3.1.min.js"></script>
+	<script src="/vendors/jquery-ui/jquery-ui.min.js"></script>
+	<script src="/vendors/hammer/hammer.min.js"></script>
+	<script src="/vendors/hammer/jquery.hammer.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+
+	<style type="text/css">
+
+	</style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+
+<body style="background-color:#FDF9EC;">
+	<div>
+		<br>
+		<div class="container">
+
+			<div class="row">
+		    <div class="col">
+					<a href="/index.html" class="btn btn-light"> < back</a>
+				</div>
+		    <div class="col"></div>
+				<div class="col"></div>
+				<div class="col"></div>
+				<div class="col">
+					<i class="fa fa-heart" id="heart" ></i>
+				</div>
+		  </div>
+
+		</div>
+		<br>
+
+		<img src="icons/sun-icon.png" class="center" width="300" height="300">
+
+
+		<div class="FixedHeightContainer">
+			<br><br>
+		  <h2 class='title'>Monica's Plant</h2>
+			<br>
+		  <div class="Content">
+				<div class="row">
+			    <div class="col">
+						<img src="icons/watering-can-icon.png" class="center" width="80" height="80">
+			    </div>
+			    <div class="col">
+						<p>weekly</p>
+			    </div>
+			  </div>
+				<br>
+				<div class="row">
+			    <div class="col">
+						<img src="icons/sun-icon.png" class="center" width="80" height="80">
+			    </div>
+			    <div class="col">
+						<p>direct</p>
+			    </div>
+			  </div>
+				<br>
+				<div class="row">
+			    <div class="col">
+						<img src="icons/health-icon.png" class="center" width="80" height="80">
+			    </div>
+			    <div class="col">
+						<p>healthy</p>
+			    </div>
+			  </div>
+				<br>
+				<div class="row">
+			    <div class="col">
+						<img src="icons/ruler-icon.png" class="center" width="80" height="90">
+			    </div>
+			    <div class="col">
+						<p>medium</p>
+			    </div>
+			  </div>
+				<br>
+
+		  </div>
+			<div class="container text-center">
+				<a href="/message_center_2.html" class="btn btn-light">contact seller</a>
+			</div>
+			<br>
+		</div>
+	</div>
+
+	<!-- heart turns red on click -->
+	<!-- source: https://www.w3resource.com/icon/font-awesome/web-application-icons/heart.php -->
+	<script>
+		(function() {
+			const heart = document.getElementById('heart');
+			heart.addEventListener('click', function() {
+				heart.classList.toggle('red');
+			});
+		})();
+	</script>
+</body>
+</html>
