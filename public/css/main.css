@@ -28,7 +28,8 @@
   border-radius: 1.625rem;
   padding: 0 3.5rem 0 1.5rem;
   font-size: 1rem;
-  box-shadow: 7px 7px #EDE9DD;
+/*  box-shadow: 7px 7px #EDE9DD; */
+  border: 1px solid #EDE9DD;
   background: white;
 }
 
@@ -104,29 +105,41 @@
   font-size: 15px;
 }
 
+#cat {
+  font-size: 20px;
+  margin-top: 6px;
+  margin-left: 7px;
+}
+
 .card2 {
  /*float: left;*/
  border-radius: 20px;
  max-width: 97.333%;
- padding: .02rem;
+ padding: .02rem .02rem  0rem .02rem;
  margin: 1rem;
  border: 0;
  flex-basis: 40.333%;
  flex-grow: 0;
  flex-shrink: 0;
- box-shadow: 7px 7px #EDE9DD;
+
 }
 
 .card-body2 {
-  height: 50px;
+  height: 10px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   margin-bottom: 15px;
 }
 
 .categories {
-  height: 100px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  height: 120px;
+  width: 100%;
+  border-radius: 20px;
   background-color: #FDF9EC;
+  box-shadow: 7px 7px #EDE9DD;
+}
+
+.clickable:not([disabled]):active {
+  transform: translate(2px, 2px);
+  display: inline;
 }
