@@ -3,6 +3,7 @@
 <head>
 	<title>Browse</title>
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="vendors/bootstrap/css/bootstrap.css" />
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Biryani&family=Quicksand" >
@@ -17,11 +18,8 @@
 
 <style type="text/css">
 
-.L{
-    width: 50vw;
-}
-.L{
-    width: 50vw;
+
+.L {
     float: left;
 }
 .l {
@@ -52,7 +50,22 @@
   padding-left: 10px;
   font-size: 32px;
 }
+.ht {
+  margin-top: -7vw;
+  position: relative;
+  top: 10vw;
+  left: 3vw;
+}
 
+
+.ht {
+  color: grey;
+  font-size: 30px;
+}
+
+.ht.pink {
+  color: #ECCCFF;
+}
 </style>
 
 </head>
@@ -74,22 +87,26 @@
 
 <div class="L">
     <div class='menu l'>
-        <img src='images/snake.jpg' width=100%>
+        <i class="fa fa-heart ht clickable"></i>
+        <img src='images/snake.jpg' class="clickable" width=100%>
         <h3>$1</h3>
     </div>
 
     <div class='menu l'>
-        <img src='images/groot.png' width=100%>
+      <i class="fa fa-heart ht clickable"></i>
+        <img src='images/groot.png' class="clickable" width=100%>
         <h3>$2</h3>
     </div>
 
     <div class='menu l'>
-        <img src='images/round.jpg' width=100%>
+        <i class="fa fa-heart ht clickable"></i>
+        <img src='images/round.jpg' class="clickable" width=100%>
         <h3>$3</h3>
     </div>
 
     <div class='menu l'>
-        <img src='images/twig.jpg' width=100%>
+        <i class="fa fa-heart ht clickable"></i>
+        <img src='images/twig.jpg' class="clickable" width=100%>
         <h3>$2</h3>
     </div>
 </div>
@@ -97,29 +114,101 @@
 <div class="R">
 
     <div class='menu r'>
-        <img src='images/round.jpg' width=100%>
+        <i class="fa fa-heart ht clickable"></i>
+        <img src='images/round.jpg' class="clickable" width=100%>
         <h3>$6</h3>
     </div>
 
     <div class='menu r'>
-        <img src='images/twig.jpg' width=100%>
+        <i class="fa fa-heart ht clickable"></i>
+        <img src='images/twig.jpg' class="clickable" width=100%>
         <h3>$2</h3>
     </div>
 
     <div class='menu r'>
-        <img src='images/snake.jpg' width=100%>
+        <i class="fa fa-heart ht clickable"></i>
+        <img src='images/snake.jpg' class="clickable" width=100%>
         <h3>$4</h3>
     </div>
 
     <div class='menu r'>
-        <img src='images/groot.png' width=100%>
+        <i class="fa fa-heart ht clickable"></i>
+        <img src='images/groot.png' class="clickable" width=100%>
         <h3>$5</h3>
     </div>
 
+
+
+
+
+
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br> 
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br> 
+    <br><br><br><br>
+    
+    <nav class="navbar fixed-bottom navbar-light" style="background-color: #BFCFA3;"">
+      <a class="nav-item mx-2 my-3" href="#">
+        <img
+        src="iconfolder/message-icon.png"
+        width="30"
+        height="30"
+        class="d-inline-block align-top"
+        />
+      </a>
+      <a class="nav-item mx-2 my-3" href="#">
+        <img
+        src="iconfolder/heart-icon.png"
+        width="30"
+        height="30"
+        class="d-inline-block align-top"
+        />
+      </a>
+      <a class="nav-item mx-2 my-3" href="/">
+        <img
+        src="iconfolder/home-icon.png"
+        width="30"
+        height="30"
+        class="d-inline-block align-top"
+        />
+      </a>
+      <a class="nav-item mx-2 my-3" href="#">
+        <img
+        src="iconfolder/camera-icon.png"
+        width="30"
+        height="30"
+        class="d-inline-block align-top"
+        />
+      </a>
+      <a class="nav-item mx-2 my-3" href="/profile">
+        <img
+        src="iconfolder/profile-icon.png"
+        width="30"
+        height="30"
+        class="d-inline-block align-top"
+        />
+      </a>
+    </nav>
+
+
+
+
 </div>
 
-	<script>
-	  
-	</script>
+<script>
+  (function() {
+    const hearts = document.getElementsByClassName('ht');
+    for (let i = 0; i < hearts.length; i++) {
+      hearts[i].addEventListener('click', function() {
+        hearts[i].classList.toggle('pink');
+      });
+    }
+  })();
+</script>
 </body>
 </html>
