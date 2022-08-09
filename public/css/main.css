@@ -6,7 +6,7 @@
 }
 
 .label {
-  font-size: .625rem;
+  font-size: 0.625rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: +1.3px;
@@ -29,8 +29,8 @@
   border-radius: 1.625rem;
   padding: 0 3.5rem 0 1.5rem;
   font-size: 1rem;
-/*  box-shadow: 7px 7px #EDE9DD; */
-  border: 1px solid #EDE9DD;
+  /*  box-shadow: 7px 7px #EDE9DD; */
+  border: 1px solid #ede9dd;
   background: white;
 }
 
@@ -51,40 +51,40 @@
   height: 250px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  background-color: #FDF9EC;
+  background-color: #fdf9ec;
 }
 
 /* Horizontal Scroll Code (Ruben)*/
 .row-scroll {
- align-items: stretch;
- display: flex;
- flex-direction: row;
- flex-wrap: nowrap;
- overflow-x: auto;
- overflow-y: hidden;
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 .card {
- /*float: left;*/
- border-radius: 20px;
- max-width: 90.333%;
- padding: .02rem;
- margin: 1rem;
- border: 0;
- flex-basis: 90.333%;
- flex-grow: 0;
- flex-shrink: 0;
- box-shadow: 7px 7px #EDE9DD;
+  /*float: left;*/
+  border-radius: 20px;
+  max-width: 90.333%;
+  padding: 0.02rem;
+  margin: 1rem;
+  border: 0;
+  flex-basis: 90.333%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  box-shadow: 7px 7px #ede9dd;
 }
 
 .card > img {
- margin-bottom: .75rem;
- width: 100%;
+  margin-bottom: 0.75rem;
+  width: 100%;
 }
 
 .card-text {
- font-size: 85%;
- padding: 0;
- margin: 0;
+  font-size: 85%;
+  padding: 0;
+  margin: 0;
 }
 
 .card-body {
@@ -95,8 +95,6 @@
 }
 
 .card-title {
-
-
   font-size: 30px;
   padding: 0;
   margin: 0;
@@ -113,16 +111,15 @@
 }
 
 .card2 {
- /*float: left;*/
- border-radius: 20px;
- max-width: 97.333%;
- padding: .02rem .02rem  0rem .02rem;
- margin: 1rem;
- border: 0;
- flex-basis: 40.333%;
- flex-grow: 0;
- flex-shrink: 0;
-
+  /*float: left;*/
+  border-radius: 20px;
+  max-width: 97.333%;
+  padding: 0.02rem 0.02rem 0rem 0.02rem;
+  margin: 1rem;
+  border: 0;
+  flex-basis: 40.333%;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .card-body2 {
@@ -136,8 +133,8 @@
   height: 120px;
   width: 100%;
   border-radius: 20px;
-  background-color: #FDF9EC;
-  box-shadow: 7px 7px #EDE9DD;
+  background-color: #fdf9ec;
+  box-shadow: 7px 7px #ede9dd;
 }
 
 .clickable:not([disabled]):active {
@@ -148,39 +145,38 @@
 /* FOR SELL.HTML - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
 /* https://bootstrapious.com/p/bootstrap-image-upload */
 
-
 #upload {
-    opacity: 0;
+  opacity: 0;
 }
 
 #upload-label {
-    position: absolute;
-    top: 50%;
-    left: 1rem;
-    transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
 }
 
 .image-area {
-    border: 2px dashed rgba(255, 255, 255, 0.7);
-    padding: 1rem;
-    position: relative;
+  border: 2px dashed rgba(255, 255, 255, 0.7);
+  padding: 1rem;
+  position: relative;
 }
 
 .image-area::before {
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 0.8rem;
-    z-index: 1;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8rem;
+  z-index: 1;
 }
 
 .image-area img {
-    z-index: 2;
-    position: relative;
+  z-index: 2;
+  position: relative;
 }
 
 /* https://www.w3schools.com/howto/howto_css_image_center.asp */
@@ -205,30 +201,29 @@
   color: red;
 }
 
-
-.FixedHeightContainer{
+.FixedHeightContainer {
   height: 510px;
-  width:414px;
-  padding:3px;
-  background:#DDE7C7;
+  width: 414px;
+  padding: 3px;
+  background: #dde7c7;
   border-radius: 25px 25px 0px 0px;
 }
 
-.Content{
-  height:300px;
-  overflow:auto;
-  background:#DDE7C7;
-  text-align:center;
+.Content {
+  height: 300px;
+  overflow: auto;
+  background: #dde7c7;
+  text-align: center;
   font-size: 25px;
 }
 
 /* FOR NAVBAR - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
 .navb {
-  position:fixed;
-	bottom:0;
-	left:0;
-	right:0;
-	z-index:1000;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   height: 90px;
   width: 100%;
 }

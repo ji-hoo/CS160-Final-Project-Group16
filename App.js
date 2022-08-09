@@ -39,6 +39,21 @@ app.get('/profile', function (req, res) {
   res.sendFile(publicPath + '/user_profile.html');
 });
 
+app.get('/chat', function (req, res) {
+  res.sendFile(publicPath + '/message_center_1.html');
+});
+app.get('/chat/monica', function (req, res) {
+  res.sendFile(publicPath + '/message_center_2.html');
+});
+
+app.get('/liked', function (req, res) {
+  res.sendFile(publicPath + '/liked.html');
+});
+
+app.get('/browse', function (req, res) {
+  res.sendFile(publicPath + '/browse.html');
+});
+
 //run this server by entering "node App.js" using your command line.
 app.listen(port, () => {
   console.log(`Server is running on http://${host}:${port}`);
