@@ -204,7 +204,7 @@
 
 .FixedHeightContainer {
   height: 510px;
-  width: 414px;
+  width: 100%;
   padding: 3px;
   background: #dde7c7;
   border-radius: 25px 25px 0px 0px;
@@ -230,5 +230,88 @@
 }
 
 /* FOR MONICA.HTML - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+#upload {
+  opacity: 0;
+}
+
+#upload-label {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+}
+
+.image-area {
+  border: 2px dashed rgba(255, 255, 255, 0.7);
+  padding: 1rem;
+  position: relative;
+}
+
+.image-area::before {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8rem;
+  z-index: 1;
+}
+
+.image-area img {
+  z-index: 2;
+  position: relative;
+}
+
+/* https://www.w3schools.com/howto/howto_css_image_center.asp */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 40px;
+}
+
+.form-select {
+  outline: none;
+}
+
+#heart {
+  color: grey;
+  font-size: 30px;
+}
+
+#heart.red {
+  color: red;
+}
+
+.FixedHeightContainer {
+  height: 700px;
+  width: 373px;
+  padding: 3px;
+  background: #dde7c7;
+  border-radius: 25px 25px 0px 0px;
+  box-shadow: 15px 0px 15px 0px lightgrey;
+}
+
+.Content {
+  height: 400px;
+  overflow: auto;
+  background: #dde7c7;
+  text-align: center;
+  font-size: 25px;
+}
+
+.clickable:not([disabled]):active {
+  transform: translate(2px, 2px);
+  display: inline;
+}
 
 /* FOR MONICA.HTML - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/

@@ -3,9 +3,9 @@
 /*
 PROJECT 2
 Template code for CS160 Summer 2022
-Prepared by Shm Garanganao Almeda 
+Prepared by Shm Garanganao Almeda
 
-Code referenced from: 
+Code referenced from:
 CS160 Summer 2021
 https://www.digitalocean.com/community/tutorials/how-to-create-a-web-server-in-node-js-with-the-http-module"
 https://expressjs.com/en/starter/hello-world.html
@@ -38,6 +38,7 @@ app.get('/', function (req, res) {
 app.get('/profile', function (req, res) {
   res.sendFile(publicPath + '/user_profile.html');
 });
+
 
 app.get('/chat', function (req, res) {
   res.sendFile(publicPath + '/message_center_1.html');
