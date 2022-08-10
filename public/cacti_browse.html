@@ -58,6 +58,25 @@
         padding-left: 10px;
         font-size: 20px;
       }
+      
+      .ht {
+        margin-top: -7vw;
+        position: relative;
+        top: 10vw;
+        left: 3vw;
+
+      }
+
+      .ht {
+        color: grey;
+        font-size: 30px;
+        float: right;
+      }
+
+      .ht.pink {
+        color: #ecccff;
+        float: right;
+      }
     </style>
   </head>
 
@@ -99,6 +118,7 @@
 
     <div class="L">
       <div class="menu l">
+        <i class="fa fa-heart ht clickable"></i>
         <img src="browsed_images/cactis/c1.jpg
         " width="100%" />
         <p class="card-text" id="price" style="margin-left: 15px;">Cactus from Flea Market</p>
@@ -106,6 +126,7 @@
           <small class="text-muted">$1</small>
       </div>
       <div class="menu l">
+        <i class="fa fa-heart ht clickable"></i>
         <img src="browsed_images/cactis/c3.jpg
         " width="100%" />
         <p class="card-text" id="price" style="margin-left: 15px;">Tiny Cactus</p>
@@ -116,6 +137,7 @@
 
     <div class="R">
       <div class="menu r">
+        <i class="fa fa-heart ht clickable"></i>
         <img src="browsed_images/cactis/c2.jpg
         " width="100%" />
         <p class="card-text" id="price" style="margin-left: 15px;">Cactus & Striped Pot</p>
@@ -183,6 +205,15 @@
     <br>
     <br>
 
-    <script></script>
+    <script>
+      (function () {
+        const hearts = document.getElementsByClassName('ht');
+        for (let i = 0; i < hearts.length; i++) {
+          hearts[i].addEventListener('click', function () {
+            hearts[i].classList.toggle('pink');
+          });
+        }
+      })();
+    </script>
   </body>
 </html>
