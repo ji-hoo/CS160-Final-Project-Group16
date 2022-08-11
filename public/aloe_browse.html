@@ -2,7 +2,10 @@
 <html>
   <head>
     <title>Browse Aloes</title>
-
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
     <link
       rel="stylesheet"
       type="text/css"
@@ -99,6 +102,7 @@
 
     <div class="L">
       <div class="menu l">
+        <i class="fa fa-heart ht clickable"></i>
         <img src="browsed_images/aloes/pexels-daria-shevtsova-1589904.jpg" width="100%" />
         <p class="card-text" id="price" style="margin-left: 15px;">My Favorite Aloe</p>
         <p class="card-text" style="margin-left: 15px;">
@@ -106,6 +110,7 @@
       </div>
 
       <div class="menu l">
+        <i class="fa fa-heart ht clickable"></i>
         <img src="browsed_images/aloes/pexels-daria-shevtsova-873082.jpg" width="100%" />
         <p class="card-text" id="price" style="margin-left: 15px;">Valentine's Aloe</p>
         <p class="card-text" style="margin-left: 15px;">
@@ -113,6 +118,7 @@
       </div>
 
       <div class="menu l">
+        <i class="fa fa-heart ht clickable"></i>
         <img src="browsed_images/aloes/pexels-ksenia-chernaya-7318134.jpg" width="100%" />
         <p class="card-text" id="price" style="margin-left: 15px;">aloe vera plant</p>
         <p class="card-text" style="margin-left: 15px;">
@@ -122,6 +128,7 @@
 
     <div class="R">
       <div class="menu r">
+        <i class="fa fa-heart ht clickable"></i>
         <img src="browsed_images/aloes/pexels-ray-piedra-1478475.jpg" width="100%" />
         <p class="card-text" id="price" style="margin-left: 15px;">smol aloe</p>
         <p class="card-text" style="margin-left: 15px;">
@@ -130,6 +137,7 @@
 
 
       <div class="menu r">
+        <i class="fa fa-heart ht clickable"></i>
         <img src="browsed_images/aloes/pexels-wendy-routman-2613947.jpg" width="100%" />
         <p class="card-text" id="price" style="margin-left: 15px;">cute aloe plant</p>
         <p class="card-text" style="margin-left: 15px;">
@@ -192,6 +200,15 @@
       </a>
     </nav>
 
-    <script></script>
+    <script>
+      (function () {
+        const hearts = document.getElementsByClassName('ht');
+        for (let i = 0; i < hearts.length; i++) {
+          hearts[i].addEventListener('click', function () {
+            hearts[i].classList.toggle('pink');
+          });
+        }
+      })();
+    </script>
   </body>
 </html>
