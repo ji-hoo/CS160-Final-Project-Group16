@@ -2,7 +2,10 @@
 <html>
   <head>
     <title>Browse Succulents</title>
-
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
     <link
       rel="stylesheet"
       type="text/css"
@@ -99,6 +102,7 @@
 
     <div class="L">
       <div class="menu l">
+        <i class="fa fa-heart ht clickable"></i>
         <img src="browsed_images/succulents/pexels-christine-clair-1034469.jpg" width="100%" />
         <p class="card-text" id="price" style="margin-left: 15px;">Succulent with Orange Pot</p>
         <p class="card-text" style="margin-left: 15px;">
@@ -106,6 +110,7 @@
       </div>
 
       <div class="menu l">
+        <i class="fa fa-heart ht clickable"></i>
         <img src="browsed_images/succulents/pexels-dominika-roseclay-912396.jpg" width="100%" />
         <p class="card-text" id="price" style="margin-left: 15px;">Succulent (need to get rid of ASAP)</p>
         <p class="card-text" style="margin-left: 15px;">
@@ -115,6 +120,7 @@
 
     <div class="R">
       <div class="menu r">
+        <i class="fa fa-heart ht clickable"></i>
         <img src="browsed_images/succulents/pexels-scott-webb-1022922.jpg" width="100%" />
         <p class="card-text" id="price" style="margin-left: 15px;">succulent</p>
         <p class="card-text" style="margin-left: 15px;">
@@ -122,6 +128,7 @@
       </div>
 
       <div class="menu r">
+        <i class="fa fa-heart ht clickable"></i>
         <img src="browsed_images/succulents/pexels-ylanite-koppens-1495170.jpg" width="100%" />
         <p class="card-text" id="price" style="margin-left: 15px;">Succulent in recycled can</p>
         <p class="card-text" style="margin-left: 15px;">
@@ -129,6 +136,7 @@
       </div>
 
       <div class="menu r">
+        <i class="fa fa-heart ht clickable"></i>
         <img src="browsed_images/succulents/pexels-dương-nhân-1590077.jpg" width="100%" />
         <p class="card-text" id="price" style="margin-left: 15px;">Succulent from dorm</p>
         <p class="card-text" style="margin-left: 15px;">
@@ -191,6 +199,15 @@
       </a>
     </nav>
 
-    <script></script>
+    <script>
+      (function () {
+        const hearts = document.getElementsByClassName('ht');
+        for (let i = 0; i < hearts.length; i++) {
+          hearts[i].addEventListener('click', function () {
+            hearts[i].classList.toggle('pink');
+          });
+        }
+      })();
+    </script>
   </body>
 </html>
