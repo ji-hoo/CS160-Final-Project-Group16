@@ -15,7 +15,8 @@
 }
 
 .searchBar {
-  width: 100%;
+  width: 90%;
+  margin-left: 5%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -317,3 +318,25 @@
 }
 
 /* FOR MONICA.HTML - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+
+/*for hearts in browse pages*/
+      .ht {
+        margin-top: -7vw;
+        position: relative;
+        top: 10vw;
+        left: 3vw;
+
+      }
+
+      .ht {
+        color: grey;
+        font-size: 30px;
+        float: right;
+      }
+
+      .ht.pink {
+        color: #ecccff;
+        float: right;
+      }
+/*-----------------------------------------*/
